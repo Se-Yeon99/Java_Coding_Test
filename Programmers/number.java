@@ -1,4 +1,3 @@
-// 짝수와 홀수 
 class Solution {
     public String solution(int num) {
         String answer = "";
@@ -7,10 +6,7 @@ class Solution {
            answer = "Even";
        }else if (num % 2 != 0){
            answer = "Odd";
-       }else{
-           System.out.println("ㅎㅎ");
        }
-        
         return answer;
     }
 }
