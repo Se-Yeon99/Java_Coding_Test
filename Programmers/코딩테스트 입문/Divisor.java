@@ -10,3 +10,4 @@ class Divisor {
          return answer;
     }
 }
+
