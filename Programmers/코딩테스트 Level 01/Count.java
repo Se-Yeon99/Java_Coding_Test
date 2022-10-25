@@ -1,18 +1,14 @@
 class Count {
     boolean Count(String s) {
-      int p = 0, y = 0;
-        String[] array = s.toLowerCase().split("");
         
-        for(int i = 0; i < array.length; i++){
-            if("p".equals(array[i])){
-                p++;
-            }else if ("y".equals(array[i])){
-               y++;
-            }
-        }
-        if(p != y){
+        int p = s.replaceAll("[^pP]","").length();
+        int y = s.replaceAll("[^yY]","").length();
+        
+        if(p == y){
+            return true;
+        }else if (p != y){
             return false;
         }
-        return true;
+       return true;
     }
 }
