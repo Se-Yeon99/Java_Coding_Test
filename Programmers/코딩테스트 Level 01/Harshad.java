@@ -10,3 +10,4 @@ class Harshad {
         return n % plus == 0;
     }
 }
+
